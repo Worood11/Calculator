@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.Calculator{
+    background-color: rgb(22, 22, 22);
+    width: 250px;
+    height: 300px;
+    
+}
+.btns{
+    padding: 10px;
+    border: none;
+    
+}
