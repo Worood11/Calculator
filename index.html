@@ -5,32 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
+    
     <div class="Calculator">
-        <input type="text" id="result">
+        
+        <input id="inputBox" readonly>
+  
         <div class="btns">
             
-       <button type="button" class="btn btn-op">*</button>
-          <button type="button" class="btn btn-op">/</button>
-          <button type="button" class="btn btn-op">-</button>
-          <button type="button" class="btn btn-op">+</button>
+          <button type="button" class="btn btn-op" onclick="data_num('*')">*</button>
+          <button type="button" class="btn btn-op" onclick="data_num('/')">/</button>
+          <button type="button" class="btn btn-op" onclick="data_num('-')">-</button>
+          <button type="button" class="btn btn-op" onclick="data_num('+')">+</button>
 
-          <button type="button" class="btn btn-num">9</button>
-          <button type="button" class="btn btn-num">8</button>
-          <button type="button" class="btn btn-num">7</button>
-          <button type="button" class="btn btn-num">6</button>
-          <button type="button" class="btn btn-num">5</button>
-          <button type="button" class="btn btn-num">4</button>
-          <button type="button" class="btn btn-num">3</button>
-          <button type="button" class="btn btn-num">2</button>
-          <button type="button" class="btn btn-num">1</button>
-          <button type="button" class="btn btn-num">.</button>
-          <button type="button" class="btn btn-num">9</button>
+          <button type="button" class="btn btn-num" onclick="data_num('9')">9</button>
+          <button type="button" class="btn btn-num" onclick="data_num('8')">8</button>
+          <button type="button" class="btn btn-num" onclick="data_num('7')">7</button>
+          <button type="button" class="btn btn-num" onclick="data_num('6')">6</button>
+          <button type="button" class="btn btn-num" onclick="data_num('5')">5</button>
+          <button type="button" class="btn btn-num" onclick="data_num('4')">4</button>
+          <button type="button" class="btn btn-num" onclick="data_num('3')">3</button>
+          <button type="button" class="btn btn-num" onclick="data_num('2')">2</button>
+          <button type="button" class="btn btn-num" onclick="data_num('1')">1</button>
+          <button type="button" class="btn btn-num" onclick="data_num('0')">0</button>
+          <button type="button" class="btn btn-num" onclick="data_num('.')">.</button>
         
-          <button type="button" class="btn btn-num">=</button>
-          <button type="button" class="btn btn-num">C</button>
-
+          <button type="button" class="btn btn-eq" onclick="calculate()">=</button>
+          <button type="button" class="btn btn-cl" onclick="clearDisplay()">C</button>
 
         </div>
     </div>
