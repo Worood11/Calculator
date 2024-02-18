@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
+    font-weight: bold;
+    
 }
 
 body{
@@ -9,26 +12,31 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: linear-gradient(to right top , red,blue) ;
 }
 .Calculator{
-    width: 300px;
-    height: 500px;
-    box-shadow: 4px 4px 30px gray;
-    border-radius: 10px;
-    background-color: rgb(26, 26, 26);
-    overflow: hidden;
+ width: 300px;
+ height: 500px;
+ border: 1px solid #999999;
+ border-radius: 16px;
+ box-shadow:  4px 4px 30px rgba(0,0,0, 0.8) ;
+ background-color: rgb(0, 0, 0,0.5);
+   
 }
-.Calculator input{
+#inputBox{
     width: 100%;
-    height: 100px;
-    border: none;
-    padding: 4rem;
-    color: white;
-    background: black;
-    font-size: 2rem;
-    text-align: right;
+    height: 150px;
+   
+    box-shadow:  4px 4px 30px rgba(0,0,0, 0.10) ;
+    background-color:rgb(0, 0, 0,0.3);
+    font-size: 50px;
+    text-align: left;
+    text-indent: 12px;
     pointer-events: none;
-    border-radius: 1rem;
+    border: none;
+    color: #fff;
+    border-radius: 20px;
+    
 
 }
 .btns{
@@ -36,22 +44,48 @@ body{
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 20px;
+   
+   
 }
 .btn{
     flex: 0 0 22%;
     margin: 5px 0;
-    border: 1px solid #000;
+    color: #fff;
+    border: 1px solid rgba(255, 255,255, 0.2);
     width: 60px;
     height: 52px;
     font-size: 22px;
     font-weight: 600;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
+    
    
   
 
 }
 .btn-op{
-    background: rgb(245, 146, 62);
+    background-color:rgb(0, 0, 0,0.3);
+    color:rgba(255, 166, 0, 0.795)
+}
+.btn-op:hover{
     color: #fff;
+}
+.btn-num{
+    background-color:rgb(0, 0, 0,0.3);
+
+}
+.btn-num:hover{
+    color:rgba(255, 166, 0, 0.795)
+}
+.btn-eq{
+    background: rgba(255, 166, 0, 0.795);
+}
+.btn-eq:hover{
+    background: rgba(255, 166, 0, 0.651);
+}
+.btn-cl{
+    background: rgb(247, 35, 35);
+}
+.btn-cl:hover{
+    background: rgba(247, 48, 48, 0.795);
 }
